@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste com hyperlinks</title>
+</head>
+<body>
+    <h1>Links Externos</h1>
+    <h2>Rômulo Lacerda</h2>
+   <p></p>
+   <!-- A tag <a> significa "âncora" e é responsável por puxar o hyperlink. O parâmetro "href" (hyperlink reference) é o luigar onde digitamos a URL de referência-->
+    <p>Você pode me encontrar por meio do <a href="https://www.youtube.com/channel/UCjrVUOy4dam_7HFAdxiiRjg">meu canal do Youtube</a></p>
+
+    <!--O parâmetro "target"_blank""" é responsável por faver o navegador abrir o hyperlink em outra aba,sem fechar a aba de origem.-->
+    <!--rel="external" é relativamente nova.É opcional,mas é recomendado.A união desta tag com o parÂmetro é recomendada quando o hyperlink é de um site de autoria de outra pessoa.-->
+    <p>Você pode me encontrar <a href="https://www.youtube.com/channel/ UCjrVUOy4dam_7HFAdxiiRjg" target="_blank" rel="external" >aqui</a></p>
+    
+<!--Links internos são links que estão dentro de um mesmo conteúdo. Geralmente usado para dar sequência a um mesmo documento.-->
+    <h1>Usando Link Interno</h1>
+        <p>Esta é a página 01 do documento.
+        Se você quiser acessar a página 02,
+         clique neste <a href="pag002.html" rel="next">link</a> a seguir</p>
+         <!--rel="next" responsável por "mostrar ao navegador" o valor do link (semântico),mostrando qal é o próximo documento sem deixar dúvidas.-->
+    <h1>Links para Download</h1>
+    <ul>
+    <li><a href="livro/10 - Ligações em toda parte.pdf" download="Teste.pdf" type="aplicattion/pdf">Baixar o livro em PDF</a></li>
+    
+    </ul>
+</body>
+</html>

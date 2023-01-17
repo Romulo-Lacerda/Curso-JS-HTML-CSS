@@ -1,0 +1,41 @@
+@charset "UTF-8";
+/*
+Em HTML "id" = Em CSS "#"
+Em HTML "class" = Em CSS "."
+*/
+body{
+    background-color: #70F5CF;
+}
+
+h1{
+  color: #19362D;  
+}
+
+/*Posso declarar a variável com o nome da tag ou omitir e deixar escrita somente a função*/
+#principal{
+    text-align: center;
+    background-color: #19362D;
+    color: white;
+}
+
+h2{
+   color: #367563; 
+}
+p{
+    color: black;
+}
+
+.básico{
+    color: red;
+}
+
+.intermediário{
+    color: blue;
+}
+.avançado{
+    color:yellow
+}
+.destaque{
+    background-color: rgba(211, 211, 75, 0.467);
+}
+

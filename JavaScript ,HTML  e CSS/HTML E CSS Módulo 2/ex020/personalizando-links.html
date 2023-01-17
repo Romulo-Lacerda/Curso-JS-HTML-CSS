@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        /*
+        
+            # = id
+            . = class
+            : = pseudo-class
+            :: = pseudo-element
+            > = children
+
+        */
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(228, 230, 178);
+        }
+        a{
+            color: red;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:visited{
+            color: blue;
+        }
+        a:hover{
+            background-color: rgba(72, 65, 65, 0.174);
+            color: black;
+            text-decoration: underline;
+        }
+        a:active{
+            color: rgb(93, 219, 35);
+        }
+        /*PseudoElemento: representado por "::"*/
+        .especial{
+            background-color: rgb(157, 141, 227);
+
+        }
+
+        .especial::before{
+            content:'⇒';
+            color: darkgrey;
+            font-weight: normal;
+        }
+        .especial::after{
+            content:' ⇐ ';
+            color: darkgray;
+            font-weight: normal;
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li><a href="https://github.com/gustavoguanabara/html-css/tree/master/exercicios">Repositório GitHub</a></li>
+        <li><a href="https://www.youtube.com/" class="especial">Canal de Youtube</a></li>
+        <li><a href="https://www.cursoemvideo.com/curso/curso-html5-e-css3-modulo-2-de-5-40-horas/aulas/modulo-2-2/modulos/capitulo-15-aula-04-pseudo-elementos-em-css/">Site de Curso em Vídeo</a></li>
+    </ul>
+</body>
+</html>

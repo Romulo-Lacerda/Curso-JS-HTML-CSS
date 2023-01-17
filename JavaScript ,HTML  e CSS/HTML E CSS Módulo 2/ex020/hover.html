@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de hover</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /*Coisas que estão dentro de uma tag são representadas por ">", que significa "filho" desta.No exemplo abaixo , as configurações em "p" só foram usadas em "p" que se encontra dentro da Div*/
+        div:hover{
+            color: rgb(38, 0, 255);
+        }
+        div > p {
+            display: none; /*esconde o conteúdo de "p" em div*/
+        }
+        div:hover > p{ /*"Chama" o conteúdo de p dentro da div a aparecer*/
+            display: block;
+            color: white;
+            background-color: red;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <h1>Exemplo de hover</h1>
+    <p>Passe o mouse sobre o texto abaixo</p>
+    <div>
+        Passe o mouse aqui
+        <p>TEXTO ESCONDIDO...</p>
+    </div>
+</body>
+</html>

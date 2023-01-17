@@ -1,0 +1,232 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family= Bebas +Neue & display=swap');
+
+@font-face {
+    font-family:'Android';
+    src: url('fontes/idroid.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+*{
+    margin: 0%;
+    padding: 0%;
+    /*
+    Configurações globais para todo o documento.
+    Agora posso,individualmente aplicar margens e afins onde quero com maior liberdade
+    */
+    text-align: justify;/*Faz com que linhas sejam quebradas de acordo com a resolução de cada tela */
+    
+}
+:root{ /*Pseudo classe root variáveis globais.*/
+    --cor0: #ebe5c5;
+    --cor1:#83e1ad;
+    --cor2: #3ddc84;
+    --cor3: #2fa866;
+    --cor4: #1a5c37;
+    --cor5: #063d1e;
+    /*Coloquei as cores dentro das opções dadas pelo VS Code*/
+    --fonte-padrão:Arial,Verdana,Helvetica,sans-serif;
+    --fonte-destaque:'Bebas Neue', cursive;
+    --fonte-android: 'Android';
+}
+body{
+    background-color:var(--cor0);
+    font-family: var(--fonte-padrão);
+}
+
+a.externo:after{
+    content:'\00A0\1F517';
+}
+header{
+    padding-top:30px;
+    background-color:var(--cor4);
+    min-height: 150px;
+    /*
+    Altura base para ser mostrada em qualquer dispositivo.
+    */
+
+    /*
+    VOLTE ÀS AULAS! TEXT ALIGN ERA PARA TER FUNCIONADO AQUI AO INVÉS DE INDIVIDUALMENTE NOS COMPONETES DE HEADER
+    */
+    text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.584);
+    background-image: linear-gradient(to bottom,var(--cor3),var(--cor5));
+}
+
+header>h1{
+    color:white;
+    font-family:var(--fonte-destaque);
+    text-align: center;
+    margin-bottom:15px;
+    font-size: 3em;
+}
+
+header>p{
+    color: white;
+    text-align: center;
+    font-family: var(--fonte-padrão);
+    font-size: 1.2em;
+    max-width:600px;
+    margin: auto;
+}
+
+nav{
+    background-color:var(--cor5);
+    padding: 10px;
+    box-shadow:0px 7px 9px rgba(0, 0, 0, 0.495);
+    
+}
+nav > a{
+    padding:15px ;
+    text-decoration: none;
+    color: white;
+    font-weight:bold;
+}
+nav>a:hover{
+    background-color: var(--cor3);
+    color: var(--cor5);
+    border-radius:5px;
+    transition-duration:0.5s;
+    /*
+    REVISAR MATÉRIA DE PSEUDO ELEMENTO E PSEUDO CLASSE
+    */
+}
+
+main{
+    padding:20px;
+    background-color: white;
+    min-width:300px;
+    max-width: 1000px;
+    margin:auto;/*Centraliza o conteúdo*/
+    margin-bottom: 50px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.563);
+    border-bottom-left-radius:10px;
+    border-bottom-right-radius:10px;
+    
+    /*
+    Estas duas configurações de borda faz com que sejam editados de forma individual,ao contrário do border-radium padrão,que edita em diagonal os opostos.
+    */
+
+}
+
+main h1{
+    color:var(--cor5);
+    font-family: var(--fonte-android);
+}
+main h2{
+    font-family: var(--fonte-android);
+    color: var(--cor4);
+    font-size: 1.3em;
+    background-image: linear-gradient(to right,var(--cor1),transparent);
+    text-indent:8px;
+    /*Esta tag é responsável por fazer o parágrafo ter um recuo */
+
+}
+
+main p{
+    margin: 15px 0px;
+    text-align:justify;
+    /*Quando não coloco o sinal de "filho" dentro de uma tag para estilizar individualmente, quero dizer que a tag "filha" pode estar dentro de utras tags que estão dentro de main em qualquer nível.*/
+    text-indent:30px;
+    /*Esta tag é responsável por fazer o parágrafo ter um recuo */
+    line-height: 2em;/*Espaço vertical responsável pela altura das linhas e por consequência o espaço vertical entre elas*/
+    font-size: 1.1em;
+}
+main strong{
+    color: var(--cor4);
+    font-weight: bold;
+    padding: 2px 6px;
+    
+}
+
+main a{
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--cor5);
+    background-color:#83e1ad78;
+    padding: 2px 6px;
+}
+main a:hover{
+    text-decoration: underline;
+    color: var(--cor4);
+}
+
+main img.pequena{
+    max-width:350px;
+    display: block;
+    margin:auto;
+}
+div.vídeo{
+    background-color: var(--cor5);
+    margin: 0px -20px 30px -20px;/*PQ -20px?Tenho 10px do artigo e 10px do main.Somando estas duas e colocando na div, sobreponho as margens e crio uma div que tampa o espaço*/
+    padding: 20px;
+    /*GAMBIARRAS PARA EDITAR IFRAME ABAIXO*/
+    padding-bottom: 56.5%;
+    position: relative;
+
+}
+div.vídeo>iframe{/*Gambiarra editar aula 12 cap 17*/
+    position: absolute;
+    top: 5%;
+    left:5%;
+    height:90%;
+    width:90%;
+}
+
+aside{
+    background-color: var(--cor1);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 13px rgb(0 0 0 / 56%);}
+
+aside > ul{
+    list-style-type:'\2714\00a0\00a0';
+    /*
+    NÃO COMPATÍVEL COM TODOS OS NAVEGADORES
+    */
+    list-style-position: inside;
+    /*
+    COLOCA AS BOLINHAS DA LISTA PARA DENTRO DA COLUNA
+    */
+    columns: 2;
+    /*
+    PQ N FUNCIONA?!
+    era para dividir conteúdo em duas colunas!
+    aula 10 cap 17
+    */
+}
+aside>h3{
+    background-color: var(--cor4);
+    color: white;
+    padding:5px;
+    margin: -10px -10px 0px -10px;
+    border:10px 10px 10px #2fa866;
+    border-radius:10px 10px 0px 0px;
+    /*Deste jeito consegui grudar o h3 com o aside,criando uma margem negativa que sobrepõe o aside.*/
+
+}
+
+picture>img{
+    display: block;
+    margin: auto;
+}
+picture.bordinha>img{
+    border-radius: 10px;
+}
+footer>p{
+    background-color: var(--cor5);
+    color: white;
+    text-align: center;
+    padding: 6px;
+    font-size: 0.8em;
+}
+
+footer>p>a{
+    color: white;
+    font-weight: bolder;
+}
+footer a:hover{
+    text-decoration: underline;
+    color: var(--cor1);
+}
+/*"footer a", ou "footer>p>a" significam a mesma coisa pelo fato de "footer a" ser característica geral para qualquer "a" existente dentro de footer*/

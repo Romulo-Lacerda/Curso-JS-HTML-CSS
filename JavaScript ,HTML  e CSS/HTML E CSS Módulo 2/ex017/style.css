@@ -1,0 +1,44 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2? family= Rubik+Bubbles & display=swap');
+body{
+    font-family: 'Rubik Bubbles', cursiva;    
+    /* medidas Absolutas 
+    cm,nm,in,px,pt,pc
+
+    Medidas Relativas 
+    em,ex,(altura de M e de X),rem,(vw,vh= altura da viewport e altura da viewport[tela]), %
+
+    Recomendação da W3C:px e em SOMENTE
+    */
+
+    /*a letra normalmente já possui 16px
+    16px geralmente == 1 em
+    .
+    .
+    .
+    */
+    font-size: 1em;
+    font-weight:normal;
+    font-style: italic;
+    text-decoration: underline;
+    /*weight=normal,lighter,bold,bolder*/
+    
+    /*weight= peso   width=largura   height= altura*/
+}
+
+h1{
+    font-family:'work Sans',sans-serif ;
+    font-weight: bolder;
+    font-size: 3em;
+    font-style: italic;
+    /*shorthand font
+    
+    -font-style -> font-weight -> font-size -> sans-serif;
+    */
+
+    font: italic bolder 3m 'work Sans' , sans-serif ;
+}
+
+h2{
+    font:bold 2em 'work Sans';
+}

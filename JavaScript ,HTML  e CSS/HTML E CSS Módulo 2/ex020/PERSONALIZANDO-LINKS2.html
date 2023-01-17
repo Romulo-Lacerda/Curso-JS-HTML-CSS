@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personalizando Links </title>
+    <style>
+        body{
+            background-color: rgb(153, 245, 214);
+            text-align: justify;
+            text-align: center;
+            
+        }
+
+        h1{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        ul {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif,monospace;
+        }
+
+        a{
+            color:red;
+            text-decoration: none;
+        }
+        
+        a:hover{
+            background-color: rgba(0, 0, 0, 0.648);
+            color: white;
+        }
+
+        a:visited{
+            text-decoration: underline;
+        }
+        
+        a:active{
+            color: darkmagenta;
+            background-color: rgba(215, 154, 215, 0.219);
+        }
+        
+        ul>p{
+            display: none;
+        }
+        a.especial:hover{
+            background-color: rgba(227, 88, 88, 0.396);
+            color: black;
+            font-weight: 900;
+            text-decoration: underline;
+        }
+        a::after{
+            content:' [link]';
+            text-decoration: none;
+            color: darkgoldenrod;
+            font-weight: 900;
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li><a href="https://github.com/gustavoguanabara/html-css/tree/master/exercicios" target="_blank">Repositório GitHub</a></li>
+        <li><a href="https://www.youtube.com/" class="especial" target="_blank">Canal de Youtube</a></li>
+        <li><a href="https://www.cursoemvideo.com/curso/curso-html5-e-css3-modulo-2-de-5-40-horas/aulas/modulo-2-2/modulos/capitulo-15-aula-04-pseudo-elementos-em-css/" target="_blank" >Site de Curso em Vídeo</a></li>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes Externas baixadas</title>
+    <style>
+        /* Quando eu baixar a fonte,posso "importá-la por meio de um seletor especial chamado "@font-face" */
+        @font-face {
+            font-family:love;
+            src: url(love\ story.ttf.otf) format('opentype'),url(love\ story\ ttf.ttf) format('truetype');
+            /*
+            Tipos de format()
+            -otf=(opentype)
+            -ttf(truetype)
+            -embedded-opentype
+            -truetype-aat (apple advanced typography)
+            -svg
+            */
+
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        h1{
+            font-family: love;
+        }
+    </style>
+</head>
+<body>
+    <h1>Olá,Mundo!</h1>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi quod facere voluptatum nam soluta aliquid iste obcaecati placeat iusto. Blanditiis, deleniti? Magnam eveniet autem obcaecati. Vero iste et corrupti asperiores.</p>
+</body>
+</html>

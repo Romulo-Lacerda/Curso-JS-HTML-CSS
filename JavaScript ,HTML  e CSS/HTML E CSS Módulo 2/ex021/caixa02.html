@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: bisque;
+        }
+        header{
+            background-color: chocolate;
+            padding: 10px;
+            margin: 10px;
+        }
+        nav{
+            background-color: rgba(226, 217, 55, 0.604);
+            padding: 3px;
+        }
+        nav>a{
+            text-decoration: none;
+            color: white
+        }
+        nav>a:hover{
+            text-decoration: underline;
+            margin: right 30px;;
+        }
+        main{
+            text-align: justify;
+            background-color: beige;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px 24px 73px 49px;
+
+        }
+        article>aside{
+            background-color: rgb(168, 167, 167);
+        }
+        footer{
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 1px;
+            margin: 0px;
+        }
+    </style>
+</head>
+<body><!--Header ,footer e  main são tipos de "div semântico"-->
+    <header><!--Cabeçalho-->
+        <nav><!--Colocar meus links-->
+            <h1>Meu Site</h1>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+        </nav>
+    </header>
+    <main><!--Conteúdo principal-->
+        <section id="assuntos">
+
+        </section>
+        <section id="notícias">
+            <article><!--artigo-->
+                <h2>Notícias</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates temporibus vero omnis, harum quos iusto ipsam, laudantium sed dicta incidunt nam. Minus necessitatibus id, inventore saepe veritatis quos assumenda officiis!</p>
+                <aside>
+                    <p>Artigo escrito por José da Silva</p>
+                </aside>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvimento pelo CursoEmVídeo</p>
+    </footer>
+</body>
+</html>
